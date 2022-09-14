@@ -1,4 +1,7 @@
+import 'package:ecommerceui/screen/cart/cart_screen.dart';
+import 'package:ecommerceui/screen/details/details_screen.dart';
 import 'package:ecommerceui/screen/home/home_screen.dart';
+import 'package:ecommerceui/screen/profile/profile_screen.dart';
 import 'package:ecommerceui/screen/sign_in/sign_in_screen.dart';
 import 'package:ecommerceui/screen/sign_up/sign_up_screen.dart';
 import 'package:ecommerceui/screen/splash/splash_page.dart';
@@ -17,9 +20,7 @@ final Map<String, WidgetBuilder> routes = {
   LoginSuccessScreen.routeName: (context) => LoginSuccessScreen(),
   HomeScreen.routeName: (context) => HomeScreen(),
   SignUpScreen.routeName: (context) => SignUpScreen(),
-  // CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
-  // OtpScreen.routeName: (context) => OtpScreen(),
-  // DetailsScreen.routeName: (context) => DetailsScreen(),
-  // CartScreen.routeName: (context) => CartScreen(),
-  // ProfileScreen.routeName: (context) => ProfileScreen(),
+  DetailsScreen.routeName: (context) => DetailsScreen(),
+  CartScreen.routeName: (context) => CartScreen(),
+  ProfileScreen.routeName: (context) => ProfileScreen(),
 };

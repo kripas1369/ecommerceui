@@ -19,9 +19,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: Body(),
-      // initialRoute: SplashScreen.routeName,
-      // routes: routes,
+      // home: Body(),
+      initialRoute: SplashScreen.routeName,
+      routes: routes,
     );
   }
 }
