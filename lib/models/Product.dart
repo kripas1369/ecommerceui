@@ -30,6 +30,9 @@ List<Product> demoProducts = [
       "assets/images/product1.png",
     ],
     colors: [
+      // Color(0xFFF6625E),
+      // Color(0xFF836DB8),
+      // Color(0xFFDECB9C),
       Colors.white,
     ],
     title: "Watch Controller from india",
@@ -46,6 +49,9 @@ List<Product> demoProducts = [
       "assets/images/product3.png",
     ],
     colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
       Colors.white,
     ],
     title: "Nike Sport White - Man Pant",
@@ -60,6 +66,9 @@ List<Product> demoProducts = [
       "assets/images/product4.png",
     ],
     colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
       Colors.white,
     ],
     title: "Gloves XC Omega - Polygon",
@@ -74,6 +83,9 @@ List<Product> demoProducts = [
       "assets/images/product5.png",
     ],
     colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
       Colors.white,
     ],
     title: "Gloves XC Omega - Polygon",
@@ -88,6 +100,9 @@ List<Product> demoProducts = [
       "assets/images/glap.png",
     ],
     colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
       Colors.white,
     ],
     title: "Gloves XC Omega - Polygon",
@@ -101,4 +116,4 @@ List<Product> demoProducts = [
 ];
 
 const String description =
-    "your games to sharing ";
+    "Waming from over precision control your games to sharing …";
