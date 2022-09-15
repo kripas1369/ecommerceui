@@ -12,33 +12,14 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: PreferredSize(
-      //   preferredSize: Size.fromHeight(100.0),
-      //   child: AppBar(
-      //     title: Container(
-      //         child: Image.asset("assets/images/Banner1.png", fit: BoxFit.fill)),
-      //   ),
-      // ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // Container(
-            //   height: 123,
-            //   child: ListView(
-            //     scrollDirection: Axis.horizontal,
-            //     children: [
-            //       Container(
-            //           child: Image.asset("assets/images/Banner1.png", fit: BoxFit.fill)),
-            //     ],
-            //   ),
-            // ),
             HomeHeader(),
             HomeHeaderImage(),
-            // SizedBox(height: (20)),
             SizedBox(height: (10)),
             DiscountBanner(),
             SizedBox(height: (10)),
-
             SpecialOffers(),
             SizedBox(height: (30)),
             PopularProducts(),
