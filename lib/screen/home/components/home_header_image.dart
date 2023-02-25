@@ -38,6 +38,8 @@ class HomeHeaderImage extends StatelessWidget {
           scrollDirection: Axis.horizontal,
         ),
       ),
+
+
     );
   }
 }

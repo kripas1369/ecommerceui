@@ -1,4 +1,4 @@
-import 'package:ecommerceui/components/coustom_bottom_nav_bar.dart';
+import 'package:ecommerceui/components/custom_bottom_nav_bar.dart';
 import 'package:ecommerceui/enums.dart';
 import 'package:flutter/material.dart';
 
