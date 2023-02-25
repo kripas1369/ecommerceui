@@ -1,3 +1,4 @@
+import 'package:ecommerceui/constants.dart';
 import 'package:ecommerceui/models/Product.dart';
 import 'package:flutter/material.dart';
 import 'color_dots.dart';
@@ -38,6 +39,7 @@ class Body extends StatelessWidget {
                           top: (15),
                         ),
                         child: MaterialButton(
+                          color: kPrimaryColor,
                           child:Text("Add To Cart") ,
                           onPressed: () {},
                         ),
