@@ -5,7 +5,6 @@ import 'package:ecommerceui/screen/login_success/login_success_screen.dart';
 import 'package:ecommerceui/size_config.dart';
 import 'package:flutter/material.dart';
 
-
 class SignForm extends StatefulWidget {
   @override
   _SignFormState createState() => _SignFormState();
@@ -19,10 +18,11 @@ class _SignFormState extends State<SignForm> {
   final List<String?> errors = [];
 
   void addError({String? error}) {
-    if (!errors.contains(error))
+    if (!errors.contains(error)) {
       setState(() {
         errors.add(error);
       });
+    }
   }
 
   void removeError({String? error}) {
@@ -39,9 +39,9 @@ class _SignFormState extends State<SignForm> {
       child: Column(
         children: [
           buildEmailFormField(),
-          SizedBox(height: (30)),
+          const SizedBox(height: (30)),
           buildPasswordFormField(),
-          SizedBox(height: (30)),
+          const SizedBox(height: (30)),
           Row(
             children: [
               Checkbox(
@@ -68,7 +68,10 @@ class _SignFormState extends State<SignForm> {
           SizedBox(height: (20)),
           MaterialButton(
             color: kPrimaryColor,
-            child:Text("Continue",style: TextStyle(color: kPrimaryLightColor),),
+            child: Text(
+              "Continue",
+              style: TextStyle(color: kPrimaryLightColor),
+            ),
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
@@ -137,7 +140,7 @@ class _SignFormState extends State<SignForm> {
         }
         return null;
       },
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         labelText: "Email",
         hintText: "Enter your email",
         // If  you are using latest version of flutter then lable text and hint text shown like this

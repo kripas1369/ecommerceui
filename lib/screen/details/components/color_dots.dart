@@ -1,11 +1,10 @@
 import 'package:ecommerceui/models/Product.dart';
 import 'package:flutter/material.dart';
 
-
 import '../../../constants.dart';
 import '../../../size_config.dart';
 
-class ColorDots extends StatelessWidget {
+class ColorDots extends StatefulWidget {
   const ColorDots({
     Key? key,
     required this.product,
@@ -14,30 +13,45 @@ class ColorDots extends StatelessWidget {
   final Product product;
 
   @override
+  State<ColorDots> createState() => _ColorDotsState();
+}
+
+class _ColorDotsState extends State<ColorDots> {
+  int count = 0;
+  @override
   Widget build(BuildContext context) {
     // Now this is fixed and only for demo
     int selectedColor = 3;
     return Padding(
-      padding:
-          EdgeInsets.symmetric(horizontal: (20)),
+      padding: EdgeInsets.symmetric(horizontal: (20)),
       child: Row(
         children: [
           ...List.generate(
-            product.colors.length,
+            widget.product.colors.length,
             (index) => ColorDot(
-              color: product.colors[index],
+              color: widget.product.colors[index],
               isSelected: index == selectedColor,
             ),
           ),
-          Spacer(),
+          const Spacer(),
           IconButton(
-            icon:Icon(Icons.remove),
-            onPressed: () {  },
+            icon: const Icon(Icons.remove),
+            onPressed: () {
+              setState(() {
+                if (count > 0) {
+                  count--;
+                }
+              });
+            },
           ),
-          SizedBox(width: (20)),
+          Text(count.toString()),
           IconButton(
-            icon:Icon(Icons.add),
-            onPressed: () {},
+            icon: const Icon(Icons.add),
+            onPressed: () {
+              setState(() {
+                count++;
+              });
+            },
           ),
         ],
       ),

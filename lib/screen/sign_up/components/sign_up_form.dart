@@ -1,10 +1,8 @@
 import 'package:ecommerceui/components/custom_surfix_icon.dart';
 import 'package:flutter/material.dart';
 
-
 import '../../../constants.dart';
 import '../../../size_config.dart';
-
 
 class SignUpForm extends StatefulWidget {
   @override
@@ -46,7 +44,8 @@ class _SignUpFormState extends State<SignUpForm> {
           buildConformPassFormField(),
           SizedBox(height: (40)),
           MaterialButton(
-            child:Text("Continue"),
+            color: kPrimaryColor,
+            child: Text("Continue"),
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();

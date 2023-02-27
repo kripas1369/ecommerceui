@@ -14,12 +14,11 @@ class HomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: (9)),
+        padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 6),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            SearchField(),
+            const SearchField(),
             IconBtnWithCounter(
               svgSrc: "assets/icons/Cart Icon.svg",
               press: () => Navigator.pushNamed(context, CartScreen.routeName),

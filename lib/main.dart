@@ -1,6 +1,4 @@
 import 'package:ecommerceui/routes.dart';
-
-import 'package:ecommerceui/screen/home/components/body.dart';
 import 'package:flutter/material.dart';
 
 import 'screen/splash/splash_page.dart';
@@ -16,8 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepOrange),
-      // home: Body(),
+      // home: SplashScreen(),
       initialRoute: SplashScreen.routeName,
       routes: routes,
     );

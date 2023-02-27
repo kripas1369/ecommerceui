@@ -11,17 +11,16 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
+      width: MediaQuery.of(context).size.width * 0.7,
       decoration: BoxDecoration(
         color: kSecondaryColor.withOpacity(0.1),
         borderRadius: BorderRadius.circular(15),
       ),
       child: TextField(
         onChanged: (value) => print(value),
-        decoration: InputDecoration(
-            contentPadding: EdgeInsets.symmetric(
-                horizontal: (20),
-                vertical: (9)),
+        decoration: const InputDecoration(
+            contentPadding:
+                EdgeInsets.symmetric(horizontal: (20), vertical: (14)),
             border: InputBorder.none,
             focusedBorder: InputBorder.none,
             enabledBorder: InputBorder.none,

@@ -1,7 +1,6 @@
 import 'package:ecommerceui/components/socal_card.dart';
 import 'package:flutter/material.dart';
 
-
 import 'sign_up_form.dart';
 
 class Body extends StatelessWidget {
@@ -11,20 +10,22 @@ class Body extends StatelessWidget {
       child: SizedBox(
         width: double.infinity,
         child: Padding(
-          padding:
-              EdgeInsets.symmetric(horizontal: (20)),
+          padding: const EdgeInsets.symmetric(horizontal: (20)),
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 50),
-                Text("Register Account",style: TextStyle(fontWeight: FontWeight.bold),),
-                Text(
+                const SizedBox(height: 50),
+                const Text(
+                  "Register Account",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                const Text(
                   "Complete your details or continue \nwith social media",
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 SignUpForm(),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

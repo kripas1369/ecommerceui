@@ -76,7 +76,8 @@ class CheckoutCard extends StatelessWidget {
                 SizedBox(
                   width: (190),
                   child: MaterialButton(
-                    child:Text("Check Out"),
+                    color: kPrimaryColor,
+                    child: Text("Check Out"),
                     onPressed: () {},
                   ),
                 ),

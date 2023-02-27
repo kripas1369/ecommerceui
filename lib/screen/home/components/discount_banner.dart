@@ -23,20 +23,19 @@ class DiscountBanner extends StatelessWidget {
       ),
       child: Text.rich(
         TextSpan(
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.black),
           children: [
-            TextSpan(text: "Dashain Surpise\n",style: TextStyle(
-
-                fontWeight: FontWeight.bold,
-                color: Colors.white
-            ),),
+            TextSpan(
+              text: "Dashain Surpise\n",
+              style:
+                  TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+            ),
             TextSpan(
               text: "Flat Discound 30%",
               style: TextStyle(
-                fontSize: (24),
-                fontWeight: FontWeight.bold,
-                 color: Colors.white
-              ),
+                  fontSize: (24),
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black),
             ),
           ],
         ),
