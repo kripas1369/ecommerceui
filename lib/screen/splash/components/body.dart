@@ -1,3 +1,4 @@
+import 'package:ecommerceui/components/default_button.dart';
 import 'package:ecommerceui/constants.dart';
 import 'package:ecommerceui/screen/sign_in/sign_in_screen.dart';
 import 'package:ecommerceui/screen/splash/components/splash_content.dart';
@@ -58,17 +59,23 @@ class _BodyState extends State<Body> {
                       ),
                     ),
                     Spacer(flex: 3),
-                    MaterialButton(
-                      color: kPrimaryColor,
-                      child: Text(
-                        "Continue",
-                        style: TextStyle(color: kPrimaryLightColor),
-                      ),
-                      onPressed: () {
+                    DefaultButton(
+                      text:"Continue",
+                      press:(){
                         Navigator.pushNamed(context, SignInScreen.routeName);
-                        
                       },
                     ),
+                    // MaterialButton(
+                    //   color: kPrimaryColor,
+                    //   child: Text(
+                    //     "Continue",
+                    //     style: TextStyle(color: kPrimaryLightColor),
+                    //   ),
+                    //   onPressed: () {
+                    //     Navigator.pushNamed(context, SignInScreen.routeName);
+                    //
+                    //   },
+                    // ),
                     Spacer(),
                   ],
                 ),

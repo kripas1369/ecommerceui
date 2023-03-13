@@ -1,3 +1,4 @@
+import 'package:ecommerceui/constants.dart';
 import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
@@ -14,8 +15,8 @@ class DiscountBanner extends StatelessWidget {
       width: double.infinity,
       margin: EdgeInsets.all((10)),
       padding: EdgeInsets.symmetric(
-        horizontal: (20),
-        vertical: (15),
+        horizontal: 10,
+        // vertical: (15),
       ),
       decoration: BoxDecoration(
         color: Colors.deepOrange[450],
@@ -23,19 +24,19 @@ class DiscountBanner extends StatelessWidget {
       ),
       child: Text.rich(
         TextSpan(
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: oTextColor),
           children: [
             TextSpan(
               text: "Dashain Surpise\n",
               style:
-                  TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+                  TextStyle(fontWeight: FontWeight.bold, color: oTextColor),
             ),
             TextSpan(
               text: "Flat Discound 30%",
               style: TextStyle(
                   fontSize: (24),
                   fontWeight: FontWeight.bold,
-                  color: Colors.black),
+                  color:oTextColor),
             ),
           ],
         ),

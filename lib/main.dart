@@ -1,6 +1,7 @@
 import 'package:ecommerceui/routes.dart';
 import 'package:flutter/material.dart';
 
+import 'screen/home/home_screen.dart';
 import 'screen/splash/splash_page.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepOrange),
-      // home: SplashScreen(),
+      // home:HomeScreen(),
       initialRoute: SplashScreen.routeName,
       routes: routes,
     );
