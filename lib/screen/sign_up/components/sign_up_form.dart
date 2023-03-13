@@ -45,7 +45,7 @@ class _SignUpFormState extends State<SignUpForm> {
           SizedBox(height: (40)),
           MaterialButton(
             color: kPrimaryColor,
-            child: Text("Continue"),
+            child: Text("Continue",style: TextStyle(color: Colors.white),),
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();

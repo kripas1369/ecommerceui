@@ -21,22 +21,25 @@ class CustomAppBar extends StatelessWidget {
             EdgeInsets.symmetric(horizontal: (20)),
         child: Row(
           children: [
-            SizedBox(
-              height: (40),
-              width: (40),
-              child: TextButton(
-                style: TextButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(60),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 8),
+              child: SizedBox(
+                height: (40),
+                width: (40),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(60),
+                    ),
+                    primary: kPrimaryColor,
+                    backgroundColor: Colors.white,
+                    padding: EdgeInsets.zero,
                   ),
-                  primary: kPrimaryColor,
-                  backgroundColor: Colors.white,
-                  padding: EdgeInsets.zero,
-                ),
-                onPressed: () => Navigator.pop(context),
-                child: SvgPicture.asset(
-                  "assets/icons/Back ICon.svg",
-                  height: 15,
+                  onPressed: () => Navigator.pop(context),
+                  child: SvgPicture.asset(
+                    "assets/icons/Back ICon.svg",
+                    height: 15,
+                  ),
                 ),
               ),
             ),
