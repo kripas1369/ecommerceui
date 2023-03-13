@@ -1,3 +1,4 @@
+import 'package:ecommerceui/components/default_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -75,11 +76,15 @@ class CheckoutCard extends StatelessWidget {
                 ),
                 SizedBox(
                   width: (190),
-                  child: MaterialButton(
-                    color: kPrimaryColor,
-                    child: Text("Check Out"),
-                    onPressed: () {},
+                  child: DefaultButton(
+                    press: (){},
+                    text: "Check Out",
                   ),
+                  // child: MaterialButton(
+                  //   color: kPrimaryColor,
+                  //   child: Text("Check Out"),
+                  //   onPressed: () {},
+                  // ),
                 ),
               ],
             ),

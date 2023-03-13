@@ -1,4 +1,5 @@
 import 'package:ecommerceui/components/custom_surfix_icon.dart';
+import 'package:ecommerceui/components/default_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
@@ -43,17 +44,24 @@ class _SignUpFormState extends State<SignUpForm> {
           SizedBox(height: (30)),
           buildConformPassFormField(),
           SizedBox(height: (40)),
-          MaterialButton(
-            color: kPrimaryColor,
-            child: Text("Continue",style: TextStyle(color: Colors.white),),
-            onPressed: () {
-              if (_formKey.currentState!.validate()) {
+          DefaultButton(press: (){
+             if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
                 // if all are valid then go to success screen
                 // Navigator.pushNamed(context, CompleteProfileScreen.routeName);
               }
-            },
-          ),
+          },text: "Continue"),
+          // MaterialButton(
+          //   color: kPrimaryColor,
+          //   child: Text("Continue",style: TextStyle(color: Colors.white),),
+          //   onPressed: () {
+          //     if (_formKey.currentState!.validate()) {
+          //       _formKey.currentState!.save();
+          //       // if all are valid then go to success screen
+          //       // Navigator.pushNamed(context, CompleteProfileScreen.routeName);
+          //     }
+          //   },
+          // ),
         ],
       ),
     );

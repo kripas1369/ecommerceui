@@ -36,6 +36,7 @@ class ReviewProduct extends StatelessWidget {
                     Text("(5 reviews)")
                   ],
                 ),
+                 Divider(thickness: 2,),
                 const SizedBox(height: 15),
                 Column(
                   children: [

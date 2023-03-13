@@ -35,7 +35,7 @@ class Body extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20)
                 ),
                 child: Center(child: ColorDots(product: product))),
-             
+            
           ReviewProduct(rating: product.rating),
           SizedBox(height: 15,),
           MoreProducts(),

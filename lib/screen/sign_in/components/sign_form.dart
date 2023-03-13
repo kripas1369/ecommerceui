@@ -1,4 +1,5 @@
 import 'package:ecommerceui/components/custom_surfix_icon.dart';
+import 'package:ecommerceui/components/default_button.dart';
 import 'package:ecommerceui/constants.dart';
 import 'package:ecommerceui/screen/forgot_password/forgot_password_screen.dart';
 import 'package:ecommerceui/screen/login_success/login_success_screen.dart';
@@ -66,20 +67,27 @@ class _SignFormState extends State<SignForm> {
             ],
           ),
           SizedBox(height: (20)),
-          MaterialButton(
-            color: kPrimaryColor,
-            child: Text(
-              "Continue",
-              style: TextStyle(color: kPrimaryLightColor),
-            ),
-            onPressed: () {
-              if (_formKey.currentState!.validate()) {
+          // MaterialButton(
+          //   color: kPrimaryColor,
+          //   child: Text(
+          //     "Continue",
+          //     style: TextStyle(color: kPrimaryLightColor),
+          //   ),
+          //   onPressed: () {
+          //     if (_formKey.currentState!.validate()) {
+          //       _formKey.currentState!.save();
+          //       // if all are valid then go to success screen
+          //       Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+          //     }
+          //   },
+          // ),
+          DefaultButton(press: (){
+             if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
                 // if all are valid then go to success screen
                 Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
-            },
-          ),
+          },text: "Continue",)
         ],
       ),
     );

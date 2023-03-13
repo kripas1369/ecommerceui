@@ -17,15 +17,17 @@ class CartScreen extends StatelessWidget {
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
+      elevation: 0,
       title: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             "Your Cart",
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(color: Colors.white),
           ),
           Text(
             "${demoCarts.length} items",
-            style: Theme.of(context).textTheme.caption,
+            style:TextStyle(color: Colors.white,fontSize: 15) ,
           ),
         ],
       ),
